@@ -1,0 +1,43 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: absolute;
+    top: 30px;
+    height: 30px;
+    width: 100%;
+    z-index: 10;
+    
+      
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: flex-end;
+}
+  
+.navbar ul {
+    margin: 0;
+    margin-right: 80px;
+    padding: 10px;
+}
+  
+.nav-links li {
+    display: inline;
+}
+  
+.nav-links a {
+    text-decoration: none;
+    color: #a6aaae;
+    font-size: 18px;
+    transition: 0.3s;
+}
+  
+.nav-links a:hover {
+    color: #ffff;
+}
+  

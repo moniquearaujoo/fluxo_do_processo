@@ -1,0 +1,99 @@
+.flow {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(70, 56, 224, 0.2);
+    backdrop-filter: blur(15px);
+}
+.title-flow {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 18px;
+}  
+  
+.flow-container {
+    width: 100%;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+  
+  /* Estilização dos nós */
+  
+.react-flow__node {
+    color: #0d1b2a;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    text-align: center;
+}  
+  
+.react-flow__edge-path {
+    stroke: #38e0e0 !important;
+}
+  
+.custom-node {
+    position: relative;
+    background: #fff;
+    width: 150px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 12px;
+}
+  
+.node-content {
+    color: black;
+    font-size: 12px;
+}
+  
+.icon {
+    position: absolute;
+    background: #38e0e0;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.user-icon {
+    top: -10px;
+    left: -10px;
+}
+  
+.file-icon {
+    bottom: -10px;
+    right: -10px;
+}
+  
+.tooltip {
+    position: absolute;
+    background: white;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}    
+  
+/* Nó de pergunta (formato losango) */
+.question-node {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 120px;
+    position: relative;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
