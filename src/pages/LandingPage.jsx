@@ -1,5 +1,5 @@
 import React from "react";
-import Flow from "../components/Flow";
+import FlowHome from "../components/FlowHome";
 import Header from "../components/Header";
 import About from "../components/About";
 import Team from "../components/Team";
@@ -11,7 +11,7 @@ function LandingPage() {
       <Navbar />
       <Header />
       <About />
-      <Flow />
+      <FlowHome />
       <Team />
     </div>
   );

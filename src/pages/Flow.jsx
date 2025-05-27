@@ -3,7 +3,7 @@ import ReactFlow, { Background } from 'reactflow';
 import 'reactflow/dist/style.css';
 import CustomNode from "../CustomNode";
 import { Position } from "reactflow";
-import './css/flow.css'
+import '../components/css/flow.css'
 
 const nodeTypes = { custom: CustomNode };
 
