@@ -6,7 +6,7 @@ export default function Sobre() {
   return (
     <section className="about" id="about">
       <div className="title-about">
-        <h2>O que é?</h2> run dev
+        <h2>O que é?</h2>
         <p>
           Processo de software é uma sequência lógica de atividades que tem por objetivo final de produzir ou evoluir um produto de software.
         </p>
