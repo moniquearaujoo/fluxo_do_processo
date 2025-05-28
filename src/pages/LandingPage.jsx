@@ -1,5 +1,4 @@
 import React from "react";
-import FlowHome from "../components/FlowHome";
 import Header from "../components/Header";
 import About from "../components/About";
 import Team from "../components/Team";
@@ -10,8 +9,7 @@ function LandingPage() {
     <div className="landing-container">
       <Navbar />
       <Header />
-      <About />
-      <FlowHome />
+      <About />       
       <Team />
     </div>
   );
