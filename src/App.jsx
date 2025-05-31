@@ -3,6 +3,7 @@ import NodeDetail from "./pages/NodeDetails";
 import LandingPage from "./pages/LandingPage";
 import FlowPage from "./pages/FlowPage";
 import Flow from "./pages/Flow";
+import Flow2  from "./pages/Flow2";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       {/* Detalhes de um node */}
       <Route path="/flowpage" element={<FlowPage />} /> {/* Página FlowPage */}
       <Route path="/flow" element={<Flow />} /> {/* Outra página Flow */}
+      <Route path="/flow2" element={<Flow2 />} /> {/* Outra página Flow */}
     </Routes>
     </>
   );
