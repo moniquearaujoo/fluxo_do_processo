@@ -1,12 +1,13 @@
 
 import React from 'react';
-import ReactFlow, { Background } from 'reactflow';
+import ReactFlow, { Background } from "reactflow"
 import 'reactflow/dist/style.css';
 import CustomNode from "../CustomNode";
 import { Position } from "reactflow";
 import '../components/css/flow.css'
 
-const nodeTypes = { custom: CustomNode };
+const nodeTypes = { custom: CustomNode  };
+
 
 
 const nodesCiclo2 = [
@@ -52,8 +53,8 @@ function FlowDiagram() {
 
 export default function Flow2() {
   return (
-    <section className="flow">
-      <div className="title-flow">
+    <section className="flow2">
+      <div className="title-flow2">
         <h2>Processo de Software</h2>
         <p>Ciclo II</p>
       </div>
