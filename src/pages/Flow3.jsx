@@ -17,7 +17,7 @@ const nodes3 = [
   { id: '7', type: 'custom', data: { id: '7', label: 'Testes de aceite do cliente', artefato: 'Checklists de aceite', papel: 'Cliente' }, position: { x: 1100, y: 300 } },
   { id: '8', type: 'custom', data: { id: '8', label: 'Sistema aprovado?', type: 'question' }, position: { x: 1300, y: 300 } },
   { id: '9', type: 'custom', data: { id: '9', label: 'Aprovação final do sistema', artefato: 'Documento de aceite final', papel: 'Cliente' }, position: { x: 1500, y: 300 } },
-  { id: '10', type: 'output3', data: { id: '10', label: 'FIM' }, position: { x: 1700, y: 300 }, targetPosition: Position.Left }
+  { id: '10', type: 'output', data: { id: '10', label: 'FIM' }, position: { x: 1700, y: 300 }, targetPosition: Position.Left }
 ];
 
 const edges3 = [

@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import "../components/css/details.css";
 import Details from "../components/Details";
 
+
 export default function NodeDetails() {
   const { id } = useParams();
 
@@ -356,7 +357,10 @@ export default function NodeDetails() {
         Exemplos: "- Planilha de controle de mudanças, registros no Jira",
         Ferramentas: "Excel, Trello, Miro, Jira...",
       },
+      
     },
+    
+    
   };
 
   const dados = detalhesPorId[id];

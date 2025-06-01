@@ -5,7 +5,7 @@ import FlowPage from "./pages/FlowPage";
 import Flow from "./pages/Flow";
 import Navbar from "./components/Navbar";
 import QuemSomos from "./pages/QuemSomos";
-
+import Flow3 from "./pages/Flow3"
 function App() {
   return (
     <>
@@ -16,8 +16,12 @@ function App() {
       {/* Detalhes de um node */}
       <Route path="/flowpage" element={<FlowPage />} /> {/* Página FlowPage */}
       <Route path="/flow" element={<Flow />} /> {/* Outra página Flow */}
-      <Route path="/quem-somos" element={<QuemSomos />} />
       
+      
+      <Route path="/flow3" element={<Flow3 />} />
+
+      <Route path="/QuemSomos" element={<QuemSomos />} />
+
     </Routes>
     </>
   );

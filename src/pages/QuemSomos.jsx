@@ -48,9 +48,9 @@ function GitHubAvatar({ usernames }) {
 }
 
 function QuemSomos() {
-    const githubUsers = ["willyanhenrique","Gaabs0","moniquearaujoo","Racc3","kaiomartinss",""]; 
+     const githubUsers = ["willyanhenrique","Gaabs0","moniquearaujoo","Racc3","kaiomartinss",""]; 
 
-    return (
+        return (
         <div style={{ padding: '2rem' }}>
             <p>Conheça a nossa equipe:</p>
             <Team />
