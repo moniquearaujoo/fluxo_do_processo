@@ -15,7 +15,7 @@ function Navbar() {
         {/* Só aparece na LandingPage */}
         {isLandingPage && (
           <>
-            <li><a href="#team">Quem somos</a></li>
+            <li><Link to="/QuemSomos">Quem somos</Link></li>
           </>
         )}
 
