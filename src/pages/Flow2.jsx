@@ -10,7 +10,7 @@ const nodeTypes = { custom: CustomNode  };
 
 
 
-const nodesCiclo2 = [
+const nodes2 = [
   { id: '1', type: 'input', data: { id: '1', label: 'Início - Análise e Projeto da Solução' }, position: { x: 100, y: 100 }, sourcePosition: Position.Right },
 
   { id: '2', type: 'custom', data: { id: '2', label: 'Revisar Requisitos Aprovados', artefato: "Documento de Requisitos", papel: "Analista de Sistemas" }, position: { x: 350, y: 100 } },
@@ -23,7 +23,7 @@ const nodesCiclo2 = [
 
   { id: '6', type: 'custom', data: { id: '6', label: 'Validar Projeto com Stakeholders', artefato: "Feedback Formal", papel: "Cliente / Equipe Técnica" }, position: { x: 1350, y: 100 } },
 
-  { id: '7', type: 'custom', data: { id: '7', label: 'Projeto Técnico Aprovado?', type: 'question' }, position: { x: 1600, y: 100 } },
+  { id: '7', type: 'question', data: { id: '7', label: 'Projeto Técnico Aprovado?', type: 'question' }, position: { x: 1600, y: 100 } },
 
   { id: '8', type: 'output', data: { id: '8', label: 'Avançar para Construção' }, position: { x: 1850, y: 60 }, targetPosition: Position.Left },
 
@@ -44,17 +44,17 @@ const edgesCiclo2 = [
 function FlowDiagram() {
   return (
     <div style={{ width: "100%", height: "400px" }}>
-      <ReactFlow nodes={nodesCiclo2} edges={edgesCiclo2} nodeTypes={nodeTypes}>
+      <ReactFlow nodes={nodes2} edges={edgesCiclo2} nodeTypes={nodeTypes}>
         <Background />
       </ReactFlow>
     </div>
   );
 }
 
-export default function Flow2() {
+export default function Flow() {
   return (
-    <section className="flow2">
-      <div className="title-flow2">
+    <section className="flow">
+      <div className="title-flow">
         <h2>Processo de Software</h2>
         <p>Ciclo II</p>
       </div>
