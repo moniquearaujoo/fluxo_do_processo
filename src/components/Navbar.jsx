@@ -11,7 +11,6 @@ function Navbar() {
         <li><Link to="/">Início</Link></li>
         <li><Link to="/quem-somos">Quem somos</Link></li>
         <li><Link to="/flowpage">Sobre</Link></li>
-        <li><Link to="/flow">Flow</Link></li>
       </ul>
     </nav>
   );
