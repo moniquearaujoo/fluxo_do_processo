@@ -27,7 +27,6 @@ const edgesCiclo2 = [
   { id: 'e6-7', source: '6', target: '7', markerEnd: { type: 'arrow' }, type: 'smoothstep' },
   { id: 'e7-8', source: '7', target: '8', markerEnd: { type: 'arrow' }, type: 'smoothstep', label: 'Sim' },
   { id: 'e7-9', source: '7', target: '9', markerEnd: { type: 'arrow' }, type: 'smoothstep', label: 'Não' },
-  { id: 'e9-3', source: '9', target: '3', markerEnd: { type: 'arrow' }, type: 'smoothstep' }
 ];
 function FlowDiagram() {
   return (

@@ -24,7 +24,7 @@ const nodes = [
       artefato: 'Plano de Implantação (Cronograma, Janelas, Comunicação)',
       papel: 'Gerente de Projeto / Equipe de Infra'
     },
-    position: { x: 250, y: 100 }
+    position: { x: 250, y: 150 }
   },
   {
     id: 'c4-3',
@@ -35,7 +35,7 @@ const nodes = [
       artefato: 'Manuais, Vídeos, Materiais de Treinamento',
       papel: 'Equipe de Treinamento / Analistas'
     },
-    position: { x: 500, y: 100 }
+    position: { x: 500, y: 150 }
   },
   {
     id: 'c4-4',
@@ -46,7 +46,7 @@ const nodes = [
       artefato: 'Sistema Implantado / Log de Deploy',
       papel: 'Equipe de DevOps / Infraestrutura'
     },
-    position: { x: 750, y: 100 }
+    position: { x: 750, y: 150 }
   },
   {
     id: 'c4-5',
@@ -57,7 +57,7 @@ const nodes = [
       artefato: 'Relatórios de Monitoramento, Logs, Alertas',
       papel: 'Equipe de Operações / Suporte'
     },
-    position: { x: 750, y: 300 } // Positioned below Implantar for potential feedback loop
+    position: { x: 1000, y: 150 } // Positioned below Implantar for potential feedback loop
   },
   {
     id: 'c4-6',
@@ -68,7 +68,7 @@ const nodes = [
       artefato: 'Relatório de Lições Aprendidas',
       papel: 'Gerente de Projeto / Equipe'
     },
-    position: { x: 1000, y: 200 }
+    position: { x: 1300, y: 150 }
   },
   {
     id: 'c4-7',
@@ -79,13 +79,13 @@ const nodes = [
       artefato: 'Relatório Final, Termo de Aceite, Documentação Arquivada',
       papel: 'Gerente de Projeto / Cliente'
     },
-    position: { x: 1250, y: 200 }
+    position: { x: 1600, y: 150 }
   },
   {
     id: 'c4-8',
     type: 'output',
     data: { id: 'c4-8', label: 'Fim Ciclo 4' },
-    position: { x: 1500, y: 200 },
+    position: { x: 1900, y: 200 },
     targetPosition: Position.Left
   }
 ];
@@ -97,8 +97,6 @@ const edges = [
   { id: 'ec4-3-4', source: 'c4-3', target: 'c4-4', markerEnd: { type: 'arrow' }, type: 'smoothstep' },
   { id: 'ec4-4-5', source: 'c4-4', target: 'c4-5', markerEnd: { type: 'arrow' }, type: 'smoothstep' }, // Deploy leads to Monitoring
   { id: 'ec4-5-6', source: 'c4-5', target: 'c4-6', markerEnd: { type: 'arrow' }, type: 'smoothstep' }, // Monitoring leads to Lessons Learned
-  // Optional: Add a feedback loop from Monitoring back to Deploy/Plan if needed
-  // { id: 'ec4-5-4', source: 'c4-5', target: 'c4-4', markerEnd: { type: 'arrow' }, type: 'smoothstep', label: 'Incidente Grave' },
   { id: 'ec4-6-7', source: 'c4-6', target: 'c4-7', markerEnd: { type: 'arrow' }, type: 'smoothstep' },
   { id: 'ec4-7-8', source: 'c4-7', target: 'c4-8', markerEnd: { type: 'arrow' }, type: 'smoothstep' }
 ];

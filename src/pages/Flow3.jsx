@@ -5,21 +5,27 @@ import CustomNode from "../CustomNode";
 import { Position } from "reactflow";
 import '../components/css/flow.css'
 
-const nodeTypes = { custom3: CustomNode };
+const nodeTypes = { custom: CustomNode };
 
 const nodes3 = [
-  { id: '1', type: 'input', data: { id: '1', label: 'Início' }, position: { x: 100, y: 200 }, sourcePosition: Position.Right },
-  { id: '2', type: 'custom', data: { id: '2', label: 'Preparar ambiente de desenvolvimento', artefato: 'Infraestrutura configurada', papel: 'Equipe Técnica' }, position: { x: 300, y: 200 } },
-  { id: '3', type: 'custom', data: { id: '3', label: 'Implementar funcionalidades', artefato: 'Código-fonte', papel: 'Desenvolvedores' }, position: { x: 500, y: 200 } },
-  { id: '4', type: 'custom', data: { id: '4', label: 'Executar testes unitários', artefato: 'Relatório de testes unitários', papel: 'Desenvolvedores' }, position: { x: 700, y: 200 } },
-  { id: '5', type: 'custom', data: { id: '5', label: 'Executar testes de sistema', artefato: 'Relatório de testes', papel: 'Equipe de QA' }, position: { x: 900, y: 200 } },
-  { id: '6', type: 'custom', data: { id: '6', label: 'Realizar correções', artefato: 'Log de correções', papel: 'Desenvolvedores' }, position: { x: 1100, y: 100 } },
-  { id: '7', type: 'custom', data: { id: '7', label: 'Testes de aceite do cliente', artefato: 'Checklists de aceite', papel: 'Cliente' }, position: { x: 1100, y: 300 } },
-  { id: '8', type: 'custom', data: { id: '8', label: 'Sistema aprovado?', type: 'question' }, position: { x: 1300, y: 300 } },
-  { id: '9', type: 'custom', data: { id: '9', label: 'Aprovação final do sistema', artefato: 'Documento de aceite final', papel: 'Cliente' }, position: { x: 1500, y: 300 } },
-  { id: '10', type: 'output3', data: { id: '10', label: 'FIM' }, position: { x: 1700, y: 300 }, targetPosition: Position.Left },
-  { id: '10', type: 'output', data: { id: '10', label: 'FIM' }, position: { x: 1700, y: 300 }, targetPosition: Position.Left }
-];
+    { id: '1', type: 'input', data: { id: '1', label: 'Início' }, position: { x: 100, y: 200 }, sourcePosition: Position.Right },
+  
+    { id: '2', type: 'custom', data: { id: '2', label: 'Preparar ambiente de desenvolvimento', artefato: 'Infraestrutura configurada', papel: 'Equipe Técnica' }, position: { x: 300, y: 200 }, sourcePosition: Position.Right, targetPosition: Position.Left },
+  
+    { id: '3', type: 'custom', data: { id: '3', label: 'Implementar funcionalidades', artefato: 'Código-fonte', papel: 'Desenvolvedores' }, position: { x: 500, y: 200 }, sourcePosition: Position.Right, targetPosition: Position.Left },
+  
+    { id: '4', type: 'custom', data: { id: '4', label: 'Executar testes unitários', artefato: 'Relatório de testes unitários', papel: 'Desenvolvedores' }, position: { x: 700, y: 200 }, sourcePosition: Position.Right, targetPosition: Position.Left },
+  
+    { id: '5', type: 'custom', data: { id: '5', label: 'Executar testes de sistema', artefato: 'Relatório de testes', papel: 'Equipe de QA' }, position: { x: 900, y: 200 }, sourcePosition: Position.Right, targetPosition: Position.Left },
+    
+    { id: '7', type: 'custom', data: { id: '7', label: 'Testes de aceite do cliente', artefato: 'Checklists de aceite', papel: 'Cliente' }, position: { x: 1100, y: 200 }, sourcePosition: Position.Right, targetPosition: Position.Left },
+  
+    { id: '8', type: 'custom', data: { id: '8', label: 'Sistema aprovado?', type: 'question' }, position: { x: 1300, y: 400 }, sourcePosition: Position.Right, targetPosition: Position.Left },
+  
+    { id: '9', type: 'custom', data: { id: '9', label: 'Aprovação final do sistema', artefato: 'Documento de aceite final', papel: 'Cliente' }, position: { x: 1600, y: 380 }, sourcePosition: Position.Right, targetPosition: Position.Left },
+  
+    { id: '10', type: 'output', data: { id: '10', label: 'FIM' }, position: { x: 1900, y: 415 }, targetPosition: Position.Left }
+  ];
 
 const edges3 = [
   { id: 'e1-2', source: '1', target: '2', markerEnd: { type: 'arrow' }, type: 'smoothstep' },
@@ -29,9 +35,8 @@ const edges3 = [
   { id: 'e5-7', source: '5', target: '7', markerEnd: { type: 'arrow' }, type: 'smoothstep' },
   { id: 'e7-8', source: '7', target: '8', markerEnd: { type: 'arrow' }, type: 'smoothstep' },
   { id: 'e8-9', source: '8', target: '9', markerEnd: { type: 'arrow' }, label: 'Sim', type: 'smoothstep' },
+  { id: 'e8-3', source: '8', target: '3', markerEnd: { type: 'arrow' }, label: 'Não', type: 'smoothstep' },
   { id: 'e9-10', source: '9', target: '10', markerEnd: { type: 'arrow' }, type: 'smoothstep' },
-  { id: 'e8-6', source: '8', target: '6', markerEnd: { type: 'arrow' }, label: 'Não', type: 'smoothstep' },
-  { id: 'e6-7', source: '6', target: '7', markerEnd: { type: 'arrow' }, type: 'smoothstep' }
 ];
 
 function FlowDiagram() {
@@ -43,6 +48,7 @@ function FlowDiagram() {
     </div>
   );
 }
+
 export default function Flow() {
   return (
     <section className="flow">

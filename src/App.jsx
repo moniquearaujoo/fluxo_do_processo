@@ -17,8 +17,8 @@ function App() {
       <Route path="/" element={<LandingPage />} /> {/* Página inicial */}
       <Route path="/nodes/:id" element={<NodeDetail />} />{" "}{/* Detalhes de um node */}
       <Route path="/flowpage" element={<FlowPage />} /> {/* Página FlowPage */}
-      <Route path="/flow" element={<Flow />} /> {/* Outra página Flow */}
       <Route path="/quem-somos" element={<QuemSomos />} />
+      <Route path="/flow" element={<Flow />} /> {/* Outra página Flow */}
       <Route path="/flow2" element={<Flow2 />} /> {/* Outra página Flow */}
       <Route path="/flow3" element={<Flow3 />} /> {/* Outra página Flow */}
       <Route path="/flow4" element={<Flow4 />} /> {/* Outra página Flow */}
